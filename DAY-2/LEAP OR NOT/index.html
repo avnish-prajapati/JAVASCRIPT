@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LEAP OR NOT </title>
+</head>
+
+<body>
+    <script>
+
+        const year = 1900;
+
+        // ager 1900 divide ho 4 se aur reminder 0 ho toh leap h as first leap happans on first 4 years back than ..but
+        // another condition is ki 100 se divide ho par reminder 0 nhi hona chahiye warna wo leap year nhi h 
+        // but again 400 se centuris divide ho toh wo leap year h ..again
+        // Condition h ki  4 se divide ho (true) and 100 se nhi (false) !! but 400 se ho (true)
+
+
+
+        if (year % 4 == 0 && year % 100 != 0 || (year % 400 == 0))
+        // 1900 / 4 =0 true but 1900 / 100 bhi =0 true 
+        // which is  not leap coz nxt time with 400 / 1900 = 300 something equation fail..
+        //Agar year 4 se divide hota hai aur 100 se divide nahi hota,
+        // ya phir 400 se divide hota hai,to wo leap year hai.
+        {
+            console.log("year is leap year");
+        }
+        else {
+            console.log("year is not leap year!");
+        }
+
+
+
+
+    </script>
+
+</body>
+
+</html>
