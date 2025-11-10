@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MINIMUM 4</title>
+</head>
+
+<body>
+    <script>
+
+        // Program to find the minimum among 4 numbers using nested if-else
+
+        let a = 54;
+        let b = 45;
+        let c = 46;
+        let d = 55;
+
+        if (a < b) { //c,d
+            if (a < c) { // d
+                if (a < d) {
+                    console.log("a is minimum");
+                } else {
+                    console.log("d is minimum");
+                }
+            }
+            else {
+                if (c < d) {
+                    console.log("c is minimum");
+                } else {
+                    console.log("d is minimum");
+                }
+            }
+        }
+        else {
+            // b,c,d
+            if (b < c) { // b,d
+                if (b < d) {
+                    console.log("b is minimum");
+                } else {
+                    console.log("d is minimum");
+                }
+            }
+            else { // c,d
+                if (c < d) {
+                    console.log("c is minimum");
+                } else { // d
+                    if (a == b && b == c && c == d && d == a) {
+
+                        console.log("all are same ");
+
+                    }
+                    else {
+                        console.log("d is minimum");
+                    }
+                }
+
+            }
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+
+
+
+
+</body>
+
+</html>

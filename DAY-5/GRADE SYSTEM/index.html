@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GRADE SYSTEM</title>
+</head>
+
+<body>
+
+
+    <script>
+        // wap to grade student using percentage based marks ...
+        // create variables of subject and total divide by 5 subject for percentage ..
+        // create percentage and total variable..
+        let gujarati = 54;
+        let hindi = 95;
+        let science = 65;
+        let english = 66;
+        let maths = 69;
+
+        let total = gujarati + hindi + english + science + maths;
+        let percentage = total / 5;
+
+
+        if (percentage >= 95 && percentage <= 100) {
+            console.log("Grade A+");
+        }
+        else if (percentage >= 90) {
+            console.log("Grade A");
+        }
+        else if (percentage >= 80) {
+            console.log("GRade B+");
+        }
+        else if (percentage >= 70) {
+            console.log("Grade B");
+        }
+        else if (percentage >= 60) {
+            console.log("Grade C");
+        }
+        else if (percentage >= 50) {
+            console.log("Grade D");
+        }
+        else if (percentage >= 34) {
+            console.log("Luckly Pass");
+        }
+        else if (percentage >= 1) {
+            console.log("Better luck next time (FAIL)");
+        }
+        else {
+            console.log("Put valid numbers no text ");
+        }
+
+    </script>
+
+</body>
+
+</html>
