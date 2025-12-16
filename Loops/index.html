@@ -1,0 +1,775 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // 1.WAP to check if a user is eligible for vote (age ≥ 18).
+
+        //  const  age = 25;
+        //     if(age >= 18){
+
+        //          if(age>=100){
+        //             document.writeln("invailid age !!")
+        //          }
+        //           else{
+        //             document.writeln("  your age is eligible for vote.");
+        //           }  
+        //     }
+        //     else{
+
+        //          document.writeln("  your age is not eligible for vote.")
+        //     }
+
+        // 2.WAP to check whether a number is even or odd.
+        // let number = 28;
+        // if(number%2==0){
+        //     document.writeln("number is even .")
+        // }
+        // else{
+        //     document.writeln("ember is odd.")
+        // }
+
+
+        // 3.WAP to check whether a number is divisible by 7 or not.
+        //   const  num = 7;
+        //     if( num%7 == 0){
+        //         document.writeln(" divisible by num ");
+        //     }
+        //     else{
+        //          document.writeln(" not divisible by num  ");
+        //     }
+
+        // 4.WAP to check whether a given year is leap year or not.
+        // let check = 2001;
+        // let leep = 4;
+        // if(check%4==0){
+        //     document.writeln("  yes leep year")
+        // }
+        // else{
+        //     document.writeln("   not leep year")
+        // }
+
+        // 5.WAP to check a number is positive, negative or neutral.
+        // let n = 15;
+        // if(n>=0){
+        //     document.writeln("number is positive . <br>");
+        //     document.writeln("number is  natural .");            
+
+        // }
+        // else if (n<0){
+        //     document.writeln("number is negative.")
+        // }
+
+        //  6.WAP to find maximum between two numbers.
+        // let num1 = 20;
+        // let num2 = 18;
+        // if(num1>num2){
+        //     document.writeln( " max  number is : ", num1);
+        // }
+        // else{
+        //     document.writeln( "max number is : ", num2);
+
+        // }
+        // 7.WAP to find minimum between four numbers using nested if-else.      
+        // let num1 = 10, num2 = 100, num3 = 1000, num4 = 10000;
+        //     if(num1==num2&&num2==num3&&num3==num4&&num4==num1){
+        //         document.writeln("all are equal ")
+        //     }else{
+
+
+        // if (num1 < num2) {
+        //     if (num1 < num3) {
+        //         if (num1 < num4) {
+        //             document.writeln("Num1 is minimum !")
+        //         } else {
+        //             document.writeln("num4 is minimum !")
+        //         }
+        //     } else {
+        //         if (num3 < num4) {
+        //             document.writeln("num3 is minimum !")
+
+        //         } else {
+        //             document.writeln("num4 is minimum !")
+
+        //         }
+        //     }
+
+        // } else {
+        //     if (num2 < num3) {
+        //         if (num2 < num4) {
+        //             document.writeln("num2 is minimum !")
+
+        //         } else {
+        //             document.writeln("num4 is minimum !")
+
+        //         }
+        //     } else {
+        //         if (num3 < num4) {
+        //             document.writeln("num3 is minimum !")
+
+        //         } else {
+        //             document.writeln("num4 is minimum !")
+
+        //         }
+        //     }
+        // }
+        //     }
+
+        // 8.WAP to find maximum between three numbers using ladder if-else.
+        //     const num1=100, num2=100,num3 =1000;
+
+        //     if (num1==num2&&num2==num3&&num3==num1){
+        //          document.writeln("all are eqaul.")
+        //     }
+        //    else if(num1>=num2&&num1>=num3){
+        //          document.writeln("num1 is max");
+        //     }
+        //     else if(num2>=num1&&num2>=num3){
+        //          document.writeln("num2 is max");
+        //     }
+        //     else if(num3>=num2&&num3>=num1){
+        //          document.writeln("num3 is max");
+        //     }
+
+
+
+
+        // 9.WAP to calculate electricity bill based on unit slabs.
+        //  const unit = 400;
+        //  let total;
+        //  if(unit>=1&&unit<=20){
+        //     total = unit*1 //unit = 1 unit = 1rupies.
+        //      document.writeln("your bill amount is : ",total);
+        //     }
+        //  else if(unit>=21&&unit<=50){
+        //     total = 20 + (unit-20)*1.5; //unit = 1unit = 1.5 rupies.
+        //      document.writeln("your bill amount is : ",total);
+        //  } 
+        //  else if(unit>=51&&unit<=100){
+        //     total = 20 + (30*1.5)+( unit - 50)*2;
+        //     document.writeln("your bill amount is : ",total);
+        //  }
+        //  else if (unit >=101&&unit<=150){
+        //     total = 20+45+100+(unit-100)*2.5; //1unit =2.5rupies.
+        //      document.writeln("your bill amount is : ",total);
+
+        //   }
+        //  else if(unit>=151){
+        //     total= 20+45+100+125+(unit-150)*5 // 1 unit = 5 rupies.
+        //     document.writeln("your bill amount is : ",total);
+
+        //  }
+        // 10.WAP to calculate student grade using percentage of 5 subjects.
+        // let there are 5 subjects ----> hin eng maths sci ss 
+        // const hin = 89, eng = 66, maths = 100, sci = 100, ss = 100;
+        // let per = 0;
+        // let total = 0;
+        // total = hin + eng + maths + sci + ss;
+        // per = Math.floor((total / 500) * 100);
+        // if (per >= 91 && per <= 100) {
+        //      document.writeln("Your Grade is A");
+        // } else if (per >= 71 && per <= 90) {
+        //      document.writeln("Your Grade is B");
+        // } else if (per >= 51 && per <= 70) {
+        //     document.writeln("Your Grade is C");
+        // } else if (per >= 31 && per <= 50) {
+        //      document.writeln("Your Grade is D");
+        // } else {
+        //      document.writeln("Your Grade is F");
+        //      document.writeln("means = Tu Fail hai")
+        // }
+
+
+
+        // 11.WAP to print weekday name by day number (1–7).
+
+        // document.writeln("weekday name by day number (1-7) . <br>");
+        // document.writeln ("enter you number here  :- ");
+        // const choice = 7;
+
+        // switch (choice){
+        //     case 1:document.writeln("Monday");
+        //     break; 
+        //     case 2:document.writeln("Tuesday");
+        //     break;
+        //     case 3:document.writeln("Wednesday");
+        //     break;
+        //     case 4:document.writeln("Thursday");
+        //     break;
+        //     case 5:document.writeln("Friday");
+        //     break;
+        //     case 6:document.writeln("saturday");
+        //     break;
+        //     case 7:document.writeln("Sunday");
+        //     break;
+        // }
+        //12. WAP to print month name by first letter (J, F, M…).
+        // document.writeln("month name by first letter. <br>");
+        // document.writeln("enter first letter of the month <br>");
+        // document.writeln("<br>")
+        // const choice = "D"; //j, f m a m j j a s o n d 
+        // switch(choice){
+        //     case "j":
+        //     case "J":
+        //         document.writeln("January <br> ");
+        //         document.writeln("June <br>");
+        //         document.writeln(" july");
+
+        //       break;
+        //     case "f":
+        //     case "F": 
+        //         document.writeln("February");
+        //     break;
+        //     case "m":
+        //     case "M":
+        //         document.writeln(" March <br>");
+        //         document.writeln("May");
+
+        //     break;
+        //     case "a":
+        //     case "A":
+        //         document.writeln("April<br> ");
+        //         document.writeln(" August");
+
+        //     break;
+
+        //     case "s":
+        //     case "S":
+        //         document.writeln(" September ");
+        //     break;
+        //     case "o":
+        //     case "O": 
+        //         document.writeln(" Octuber");
+        //     break;
+        //     case "n":
+        //     case "N": 
+        //         document.writeln("November");
+        //     break;
+        //     case "d":
+        //     case "D": 
+        //         document.writeln("December");
+
+        // }
+        //  13.WAP to check MCQ answer (A/B/C/D) using switch.
+        // document.writeln("who is biggest number? <br>")
+        // document.writeln("A. 4 <br>");
+        // document.writeln("B. 15 <br>");
+        // document.writeln("C. 12 <br>");
+        // document.writeln("D. 7 <br><br>");
+        // document.writeln("give your answer :")
+
+        // let choice = 'C'
+        // switch (choice) {
+        //     case "A":
+        //     case "a":
+        //         document.writeln("Wrong Answer");
+        //         break;
+        //     case "B":
+        //     case "b":
+        //         document.writeln("Correct Answer");
+        //         break;
+        //     case "C":
+        //     case "c":
+        //         document.writeln("Wrong Answer");
+        //         break;
+        //     case "D":
+        //     case "d":
+        //         document.writeln("Wrong Answer");
+        //         break;
+        //     default:
+        //         document.writeln("Invalid input");
+
+        // }
+
+        // 14.WAP to print numbers 1 to n using while loop, do…while loop, for loop.
+        // let i = 1;
+        // let n = 15;
+        // while(i<=n){
+        //     document.writeln(i);
+        //     i++;
+        // }
+        // do{
+        //     document.writeln(i);
+        //     i++;
+        // }while(i<=n);
+        // for(i=1;i<=n;i++){
+        //     document.writeln(i);
+        // }
+
+
+        // 15.WAP to print numbers n to 1 using while loop, do…while loop, for loop.
+
+        // let n = 15;
+        // let i = n;
+        // while(i>=1){
+        //     document.writeln(i);
+        //     i--;
+        // }
+        // do {
+        //     document.writeln(i);
+        //     i--;
+        // } while (i >= 1);
+        //   for(i=n;i>=1;i--){
+        //       document.writeln(i);
+        //   }
+
+
+        // 16.WAP to print only even numbers from 1 to n using while loop, do…while loop, for loop.
+        // let i = 1;
+        // let n = 19;
+        //     while(i<=n){
+        //         if( i%2==0){
+        //         document.writeln(i);
+        //     }
+        //     i++;
+        // }
+        // do {
+        //     if (i % 2 == 0) {
+        //         document.writeln(i);
+        //     }
+        //     i++;
+        // } while (i <= n);
+
+        // for (i = 1; i <= n; i++) {
+        //     if (i % 2 == 0) {
+        //         document.writeln(i);
+        //     }
+        // }
+
+
+        // 17.WAP to print only odd numbers from n to 1 using while loop, do…while loop, for loop.
+        //  let i = 1;
+        // let n = 19;
+        //     while(i<=n){
+        //         if( i%2==1){
+        //         document.writeln(i);
+        //     }
+        //     i++;
+        // }
+        // do {
+        //     if (i % 2 == 1) {
+        //         document.writeln(i);
+        //     }
+        //     i++;
+        // } while (i <= n);
+
+        // for (i = 1; i <= n; i++) {
+        //     if (i % 2 == 1) {
+        //         document.writeln(i);
+        //     }
+        // }
+
+
+        // 18.WAP to print all leap years between a start and end year using while loop, do…while loop, for loop.
+        //  let start= 2000;
+        //  let end = 2030;
+        //  let i=start;
+        //  while(i<=end){
+        //     if(i%4==0){
+        //         document.writeln(i);
+        //     }
+        //     i++;
+        //  }
+        // do{
+        //     if(i%4==0){
+        //         document.writeln(i);
+        //     }
+        //     i++;
+        //  }while(i<=end);
+
+        // for(i=start;i<=end;i++){
+        //     if(i%4==0){
+        //           document.writeln(i);
+        //      }
+        // }
+
+
+        // 19.WAP to print the sum of numbers from 1 to n using while loop, do…while loop, for loop.
+        //  let i =1 ;
+        //  let n=10;
+        //  let sum = 0;
+        //for loop
+        //  for(i=1;i<=n;i++){
+        //     sum=sum+i;                            
+        //  }
+        //  document.writeln( sum);
+
+        //while loop
+        //  while(i<=n){
+        //     sum=sum+i; 
+        //     i++;
+        //  }
+        //  document.writeln( sum);
+
+        //  do{
+        //     sum=sum+i; 
+        //     i++;
+        //  }while(i<=n);
+        //  document.writeln( sum);
+
+        // 20.WAP to print multiplication table of any number using while loop, do…while loop, for loop.
+        // let i = 1
+        // let n=4;
+
+        // while(i<=10){
+        //      let table = n*i;
+        //     document.writeln(table, "<br>");
+        //     i++;
+        // }
+
+        // // do while 
+        // do{
+        //      let table = n*i;
+        //     document.writeln(table, "<br>");
+        //     i++;
+        // }while(i<=10);
+
+        // // for loop
+        // for(i=1;i<=10;i++){
+        //      let table = n*i;
+        //    document.writeln(table, "<br>");
+        // }    
+
+
+        // 21.WAP to print logical sequence: 1, 3, 5, 7, 9… using while loop, do…while loop, for loop.
+        // let n = 20;
+        // let i = 1;
+        // while loop 
+        // while (i <= n) {
+        //       document.writeln(i);
+
+        //     i+=2;
+        // }
+
+        // do while loop 
+        // do{
+        //       document.writeln(i);
+
+        //     i+=2;
+        // } while (i <= n); 
+
+        // for loop 
+        // for(i=1;i<=n;i+=2){
+        //     document.writeln(i);
+        // }
+
+        // 22.WAP to print sequence: 1, 11, 111, 1111… using while loop, do…while loop, for loop.
+        //  let n =1;
+        //  let i=1;
+        // //  while(i<=5){
+        // //     n=n*10+1;
+        // //     document.writeln(n);            
+        // //     i++;
+        // //  }
+
+        // //  do{
+        // //     n=n*10+1;
+        // //     document.writeln(n);            
+        // //     i++;
+        // //  }while(i<=5);
+
+        // for(i=1;i<=5;i++){
+        //     n=n*10+1;
+        //   document.writeln(n);
+        // }
+
+        // 23. WAP to print Fibonacci sequence using while loop, do…while loop, for loop.
+        // let i=1;
+        // let  f = 0;
+        // let s = 1;
+
+        // while loop 
+        // while(i<=10){
+        //     let t = f+s;
+        //   document.writeln(t);
+        //   f=s;
+        //   s=t;
+        //   i++ ; 
+        // }
+
+
+        // //do while-
+        //  do{
+        //     let t = f+s;
+        //   document.writeln(t);
+        //   f=s;
+        //   s=t;
+        //   i++ ; 
+        // } while(i<=10);
+
+        //for loop
+        // for(i=1;i<=10;i++){
+        //     let t = f+s;
+        //   document.writeln(t);
+        //   f=s;
+        //   s=t;
+        // }
+
+        // 24.WAP to reverse a number using while loop, do…while loop, for loop.
+
+        //  let num=123;
+        //  let reverse =0;
+
+        // while(num>0){
+        //   let ld = num%10;  
+        //   reverse = (reverse*10)+ld;
+        //   num = Math.floor(num/10);                
+        // }
+        // document.writeln( "reverse number is :", reverse );
+
+        //do while 
+        // do{
+        //    let ld = num%10;  
+        //    reverse = (reverse*10)+ld;
+        //    num = Math.floor(num/10);                
+        // }while(num>0);
+        //  document.writeln( "reverse number is :", reverse );
+
+        //for loop 
+        // for (;num>0;){
+        //     let ld = num%10;  
+        //    reverse = (reverse*10)+ld;
+        //    num = Math.floor(num/10);
+        // }
+        // document.writeln( "reverse number is :", reverse );
+
+        // 25.WAP to count digits of a number using while loop, do…while loop, for loop
+
+        // let num = 35;
+        // ld = num % 10;
+        // let count = 0;
+
+        // while 
+        //  while (num > 0) {
+        //         num = Math.floor(num / 10);
+        //         count++;
+        //     }
+        // document.writeln(count);
+
+        // do while 
+        // do {
+        //         num = Math.floor(num / 10);
+        //         count++;
+        //     } while (num > 0);
+        //  document.writeln(count);
+
+        // for loop         
+        //  for (; num > 0;) {
+        //         num = Math.floor(num / 10);
+        //         count++;
+        //     }
+        // document.writeln(count);
+
+        // 26.WAP to find sum of digits of a number using while loop, do…while loop, for loop.
+        // let num = 321;
+        // let sum = 0;
+        // while (num > 0) {
+        //     let digit = num % 10;
+        //     sum = sum + digit;
+        //     num = Math.floor(num / 10);
+        // }
+        // document.writeln("sum of digits : ", +sum);
+
+        // do while
+        //    do {
+        //         let digit = num % 10;
+        //         sum = sum + digit;
+        //         num = Math.floor(num / 10);
+        //     } while (num > 0);
+        //     document.writeln("sum of digits : ", +sum);
+
+        // for loop 
+        //     for (; num > 0;) {
+        //         let digit = num % 10;
+        //         sum = sum + digit;
+        //         num = Math.floor(num / 10);
+        //     }
+        // document.writeln("sum of digits : ", +sum);
+
+        // 27. WAP to check whether a number is palindrome or not using while loop, do…while loop, for loop.
+
+
+
+        //  let num=121121;
+        //  let temp = num
+        //  let reverse =0;
+
+        // while(temp>0){
+        //   let ld = temp%10;  
+        //   reverse = (reverse*10)+ld;
+        //   temp = Math.floor(temp/10);                
+        // }
+        // if(num==reverse){
+        //     document.writeln( "number is palidrom");
+        // }
+        // else{
+
+        //     document.writeln("number is not palidrom"); 
+        // }
+
+        //do while
+
+        // do{
+        //   let ld = temp%10;  
+        //   reverse = (reverse*10)+ld;
+        //   temp = Math.floor(temp/10);                
+        // }while(temp>0)
+        // if(num==reverse){
+        //      document.writeln( "number is palidrom");
+        // }
+        // else{
+
+        //     document.writeln("number is not palidrom"); 
+        // }
+
+        // //for loop 
+        // for(;temp>0;)[
+
+        // ]
+
+        //28.WAP to check whether a number is prime or not using while loop, do…while loop, for loop.
+        //        using while loop
+        //        let i =1 ;
+        //        let n =2;
+        //        let count =0;
+
+        //        while(i<=n){
+        //         if (n % i == 0) {
+        //                 count++;
+        //             } else {
+        //                 count = count + 0;
+        //             }
+
+        //                   i++;
+        //                  }
+        //         if (n == 0 && n == 1) {
+        //             document.writeln("The Number is not prime");
+        //         } else if (count > 2) {
+        //             document.writeln("The Number is not prime");
+
+        //         } else {
+        //             document.writeln("The Number is Prime Number")
+        //         }
+
+        //          using do while loop
+        //          let n =2;
+        //          let i =1;
+        //            let count = 0;
+        //           do{
+        //              if(n%i==0){
+        //     count++;
+        // }else{
+        //            count = count +0;
+        //          }
+        //             i++;
+        //          }while(i<=n);
+
+        //             if(n==0 && n==1){
+        //           document.writeln("The Number is not a Prime Number");
+
+        //              }else if(count>2){
+        //             document.writeln("The Number is not a Prime Number");
+        //         }else{
+        //            document.writeln("The Number is a Prime Number");
+
+        //           }
+
+
+
+        // using for loop
+
+        // let count = 0;
+        // let n = 21;
+        // for (let i = 1; i <= n; i++) {
+
+        //     if (n % i == 0) {
+        //         count++;
+        //     } else {
+        //         count = count + 0;
+        //     }
+        // }
+        // if (n == 0 && n == 1) {
+        //     document.writeln("The Number is not prime");
+        // } else if (count > 2) {
+        //     document.writeln("The Number is not prime");
+
+        // } else {
+        //     document.writeln("The Number is Prime Number")
+        // }
+
+        // 29.  WAP to check whether a number is Armstrong number or not using while loop, do…while loop, for loop.
+        //while loop
+
+        // let original = 153;
+        // let num = original;
+        // let sum = 0;
+        // let r = 0;
+
+        // while (num > 0) {
+        //     r = num % 10;
+        //     sum = sum + (r * r * r);
+        //     num = Math.floor(num / 10);
+        // }
+
+        // if (sum === original) {
+        //    document.writeln("Number is Armstrong.");
+        // }
+        // else {
+        //     document.writeln("Number is Not Armstrong.");
+        // }
+
+        //do while loop
+
+        // let original = 121;
+        // let num = original;
+        // let sum = 0;
+        // let r = 0;
+
+        // do {
+        //     r = num % 10;
+        //     sum = sum + (r * r * r);
+        //     num = Math.floor(num / 10);
+        // } while (num > 0);
+
+        // if (sum === original) {
+        //    document.writeln("Number is Armstrong.");
+        // }
+        // else {
+        //     document.writeln("Number is Not Armstrong.");
+        // }  
+        let original = 101;
+        let num = original;
+        let sum = 0;
+        let r;
+
+        for (; num > 0;) {
+            r = num % 10;
+            sum = sum + (r * r * r);
+            num = Math.floor(num / 10);
+        }
+
+        if (sum === original) {
+            document.writeln("Number is Armstrong");
+        } else {
+            document.writeln("Number is not Armstrong");
+        }
+
+        // 30.WAP to check whether a number is Magic Number or not using while loop, do…while loop, for loop.
+
+        // let num =  123;
+        //  if (num % 9 == 1) {
+        //     document.writeln("The Number is Magic Number !");
+
+        // } else {
+        //     document.writeln("The Number is not Magic Number ! ")
+        // }
+    </script>
+</body>
+
+</html>
