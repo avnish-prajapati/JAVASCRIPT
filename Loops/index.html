@@ -447,12 +447,11 @@
         //     i+=2;
         // }
 
-        // do while loop 
-        // do{
-        //       document.writeln(i);
-
-        //     i+=2;
-        // } while (i <= n); 
+//        i = 1;
+// do {
+//     document.writeln(i + "<br>");
+//     i += 2;
+// } while (i <= n);
 
         // for loop 
         // for(i=1;i<=n;i+=2){
@@ -480,36 +479,39 @@
         // }
 
         // 23. WAP to print Fibonacci sequence using while loop, do…while loop, for loop.
-        // let i=1;
-        // let  f = 0;
-        // let s = 1;
+       
+// let a = 0, b = 1, i;
 
-        // while loop 
-        // while(i<=10){
-        //     let t = f+s;
-        //   document.writeln(t);
-        //   f=s;
-        //   s=t;
-        //   i++ ; 
-        // }
+// /* while */
+// i = 1;
+// while (i <= 10) {
+//     let c = a + b;
+//     document.writeln(c + "<br>");
+//     a = b;
+//     b = c;
+//     i++;
+// }
+
+// /* do while */
+// a = 0; b = 1; i = 1;
+// do {
+//     let c = a + b;
+//     document.writeln(c + "<br>");
+//     a = b;
+//     b = c;
+//     i++;
+// } while (i <= 10);
+
+// /* for */
+// a = 0; b = 1;
+// for (i = 1; i <= 10; i++) {
+//     let c = a + b;
+//     document.writeln(c + "<br>");
+//     a = b;
+//     b = c;
+// }
 
 
-        // //do while-
-        //  do{
-        //     let t = f+s;
-        //   document.writeln(t);
-        //   f=s;
-        //   s=t;
-        //   i++ ; 
-        // } while(i<=10);
-
-        //for loop
-        // for(i=1;i<=10;i++){
-        //     let t = f+s;
-        //   document.writeln(t);
-        //   f=s;
-        //   s=t;
-        // }
 
         // 24.WAP to reverse a number using while loop, do…while loop, for loop.
 
@@ -760,18 +762,31 @@
         //     document.writeln("Number is not Armstrong");
        // }
 
-        // 30.WAP to check whether a number is Magic Number or not using while loop, do…while loop, for loop.
+   
+// let num = 123;
+// let sum;
 
-        // let num =  123;
-        //  if (num % 9 == 1) {
-        //     document.writeln("The Number is Magic Number !");
+// 
+// while (num > 9) {
+//     sum = 0;
+//     while (num > 0) {
+//         sum += num % 10;
+//         num = Math.floor(num / 10);
+//     }
+//     num = sum;
+// }
 
-        // } else {
-        //     document.writeln("The Number is not Magic Number ! ")
-        // }
+// if (num === 1) {
+//     document.writeln("Magic Number");
+// } else {
+//     document.writeln("Not a Magic Number");
+// }
+
+
     </script>
 </body>
 
 
 </html>
+
 
