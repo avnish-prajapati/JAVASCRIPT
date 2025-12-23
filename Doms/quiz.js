@@ -1,6 +1,6 @@
-/*
- * GET HTML ELEMENTS tags
- */
+
+//  * GET HTML ELEMENTS tags
+
 const questionEl = document.getElementById("question");
 const optionsEl = document.getElementById("options");
 const timeEl = document.getElementById("time");
@@ -66,20 +66,14 @@ const quizData = [
 ];
 
 
-/*************************
- * VARIABLES
- *************************/
+
 let currentQuestion = 0; // current question index
 let score = 0;           // user score
 let timeLeft = 60;       // 60 seconds timer
-let timer;               // setInterval reference
+let timer;               // setInterval 
 
 
-/*************************
- * LOAD QUESTION FUNCTION
- * - Question & options show karta hai
- * - Timer reset karta hai
- *************************/
+
 function loadQuestion() {
     clearInterval(timer);       // old timer stop
     timeLeft = 60;              // reset timer
@@ -106,11 +100,7 @@ function loadQuestion() {
 }
 
 
-/*************************
- * TIMER FUNCTION
- * - Har second countdown
- * - Time khatam → auto next
- *************************/
+
 function startTimer() {
     timer = setInterval(() => {
         timeLeft--;
@@ -124,11 +114,7 @@ function startTimer() {
 }
 
 
-/*************************
- * SAVE ANSWER FUNCTION
- * - Answer check karta hai
- * - Score update karta hai
- *************************/
+
 function saveAnswer() {
     const selected = document.querySelector('input[name="option"]:checked');
 
@@ -138,9 +124,7 @@ function saveAnswer() {
 }
 
 
-/*************************
- * NEXT QUESTION FUNCTION
- *************************/
+
 function nextQuestion() {
     clearInterval(timer);
     currentQuestion++;
@@ -153,9 +137,7 @@ function nextQuestion() {
 }
 
 
-/*************************
- * SHOW RESULT FUNCTION
- *************************/
+
 function showResult() {
     questionEl.style.display = "none";
     optionsEl.style.display = "none";
@@ -169,9 +151,7 @@ function showResult() {
 }
 
 
-/*************************
- * EVENT LISTENERS
- *************************/
+
 nextBtn.addEventListener("click", () => {
     saveAnswer();
     nextQuestion();
@@ -182,7 +162,4 @@ retryBtn.addEventListener("click", () => {
 });
 
 
-/*************************
- * INITIAL CALL
- *************************/
 loadQuestion(); // page load par first question
