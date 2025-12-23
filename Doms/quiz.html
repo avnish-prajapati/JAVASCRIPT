@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>General Knowledge Quiz</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="quiz.css">
+</head>
+
+<body>
+
+    <div class="quiz-container">
+
+        <!-- Heading -->
+        <h2 class="text-center">General Knowledge Quiz</h2>
+        <p class="subtitle text-center">You have 60 seconds for each question</p>
+
+        <!-- Timer -->
+        <h1 id="time" class="text-center">60</h1>
+
+        <!-- Question -->
+        <ul class="list-group mt-4">
+            <li class="list-group-item fw-bold" id="question">
+                Question will load here...
+            </li>
+
+            <!-- Options (JS dynamically inject karega) -->
+            <li class="list-group-item">
+                <div id="options"></div>
+            </li>
+        </ul>
+
+        <!-- Buttons -->
+        <div class="buttons mt-4 text-end">
+            <button id="nextBtn" class="btn btn-primary">
+                Next
+            </button>
+        </div>
+
+        <!-- Result -->
+        <div id="result" class="result mt-4 text-center fw-bold"></div>
+
+        <!-- Retry -->
+        <div class="text-center mt-3">
+            <a href="#" id="retry"></a>
+        </div>
+
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Quiz JS -->
+    <script src="quiz.js"></script>
+
+</body>
+
+</html>
