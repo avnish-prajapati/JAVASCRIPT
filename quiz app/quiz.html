@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Quiz app</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="quiz.css">
+
+</head>
+
+<body>
+
+    <section class="quiz-page">
+        
+        <div class="container ">
+            <h1 class="d-flex justify-content-center mt-5 ">Quiz Qestions 🎯💡</h1>
+            <div class="timer" id="timer">
+                <h1 style="color: red;" class="mb-5" id="timer-text"></h1>
+            </div>
+            <div class="quiz-questions">
+                <ul class="list-group list">
+                <li class="list-group-item fw-bold " id="question">1. An item</li>
+                <li class="list-group-item">
+                    <div>
+                        <input type="radio" name="option" id="radio-option-a" value="0"><span class="ms-2" id="option-a">A second item</span>
+                    </div>
+                </li>
+                <li class="list-group-item">
+                    <div>
+                        <input type="radio" name="option" id="radio-option-b" value="1"><span class="ms-2" id="option-b">A second item</span>
+                    </div>
+                </li>
+                <li class="list-group-item">
+                    <div>
+                        <input type="radio" name="option" id="radio-option-c" value="2"><span class="ms-2" id="option-c">A second item</span>
+                    </div>
+                </li>
+                <li class="list-group-item">
+                    <div>
+                        <input type="radio" name="option" id="radio-option-d" value="3"><span class="ms-2" id="option-d">A second item</span>
+                    </div>
+                </li>
+            </ul>
+            <div class="next-button-class">
+                <a class="btn btn-primary mt-2 ms-0 " id="next-button">next</a>
+            </div>
+            </div>
+        </div>
+
+    </section>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <script src="quiz.js"></script>
+</body>
+
+</html>

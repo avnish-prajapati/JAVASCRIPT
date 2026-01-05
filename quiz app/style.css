@@ -1,0 +1,102 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Background */
+body {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+}
+
+/* Main Section */
+.main {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Heading */
+h1 {
+    margin-bottom: 25px;
+    letter-spacing: 1px;
+}
+
+/* Form Box */
+.form-box {
+    background: rgba(255, 255, 255, 0.12);
+    backdrop-filter: blur(12px);
+    padding: 35px 30px;
+    border-radius: 16px;
+    width: 100%;
+    max-width: 420px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+/* Labels */
+.email-font {
+    color: #ffffff;
+    font-weight: 500;
+}
+
+/* Inputs */
+.email-size {
+    height: 45px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    padding-left: 15px;
+    font-size: 15px;
+}
+
+/* Input Focus Effect */
+.form-control:focus {
+    box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.3);
+}
+
+/* Help text */
+.form-text {
+    color: #e0e0e0;
+    font-size: 12px;
+}
+
+/* Sign In Button */
+#signin-button {
+    width: 100%;
+    margin-top: 20px;
+    padding: 12px;
+    border-radius: 12px;
+    background: linear-gradient(135deg, #ff758c, #ff7eb3);
+    border: none;
+    font-weight: 600;
+    font-size: 16px;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+/* Button Hover */
+#signin-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px rgba(255, 120, 150, 0.6);
+}
+
+/* Button Active */
+#signin-button:active {
+    transform: scale(0.97);
+}
+
+/* Mobile Responsive */
+@media (max-width: 480px) {
+    .form-box {
+        padding: 25px 20px;
+    }
+
+    h1 {
+        font-size: 26px;
+    }
+}
