@@ -1,5 +1,6 @@
 
 
+
 const quotelist = [
 
     {
@@ -309,3 +310,35 @@ const quotelist = [
         "quote": "If you can dream it, you can achieve it.", "author": "Zig Ziglar"
     }
 ];
+
+// quotelist.map((quote)=> document.writeln(quote.quote))
+
+const quoteText = document.getElementById("quote-text")
+const authorText = document.getElementById("author-text");
+const btnPrev = document.getElementById("btn-prev");
+const btnLike = document.getElementById("btn-like");
+const btnNext = document.getElementById("btn-next");
+
+
+let index = 0;
+
+quoteText.textContent = quotelist[index].quote;
+authorText.textContent = quotelist[index].author;
+
+
+btnNext.addEventListener("click",()=>{
+    index++;
+    
+quoteText.textContent = quotelist[index].quote;
+authorText.textContent = quotelist[index].author;
+
+})
+
+btnPrev.addEventListener("click",()=>{
+    index--;
+    
+quoteText.textContent = quotelist[index].quote;
+authorText.textContent = quotelist[index].author;
+
+})
+
