@@ -319,26 +319,72 @@ const btnPrev = document.getElementById("btn-prev");
 const btnLike = document.getElementById("btn-like");
 const btnNext = document.getElementById("btn-next");
 
+const codescreen = document.getElementById("codes-screen");
 
-let index = 0;
+const Favdiv = document.getElementById("fav-quotes-div");
 
-quoteText.textContent = quotelist[index].quote;
-authorText.textContent = quotelist[index].author;
+let index = parseInt(localStorage.getItem("index")) || 0;
 
+function displayquotes(){
+
+    quoteText.textContent = quotelist[index].quote;
+    authorText.textContent = quotelist[index].author;
+    codescreen.style.backgroundColor = localStorage.getItem("color")
+
+}
+
+displayquotes();
 
 btnNext.addEventListener("click",()=>{
     index++;
-    
-quoteText.textContent = quotelist[index].quote;
-authorText.textContent = quotelist[index].author;
-
-})
+    // console.log(index)
+  const str = Math.floor(Math.random() * 16777215).toString(16).padStart(6, "0");
+    const color = "#" + str;
+    localStorage.setItem("color", color);
+   
+    localStorage.setItem("index", index.toString());
+    btnPrev.classList = "btn btn-outline-warning";
+    displayquotes();    
+});
 
 btnPrev.addEventListener("click",()=>{
+   if(index == 0){
+     localStorage.setItem("index", index.toString());
+    btnPrev.classList = "btn btn-outline-warning d-none";
+    return;
+   }
     index--;
-    
-quoteText.textContent = quotelist[index].quote;
-authorText.textContent = quotelist[index].author;
+    const str = Math.floor(Math.random() * 16777215).toString(16).padStart(6, "0");
+    const color = "#" + str;
+    localStorage.setItem("color", color);
+   
+     localStorage.setItem("index", index.toString());
+    displayquotes();
 
 })
+
+btnLike.addEventListener("click",()=>{
+    const FavQuotes = JSON.parse(localStorage.getItem("favList")) || []; // str to array
+
+    const res = FavQuotes.findIndex((quote) => quote.quote === quotelist[index].quote);
+
+    if (res === -1) 
+    {
+        alert("QUOTE SAVED !");
+        FavQuotes.push(quotelist[index]);
+        localStorage.setItem("favList", JSON.stringify(FavQuotes));
+    } 
+    else
+    {
+        alert("THE QUOTES ALREADY SAVED !")
+    }
+
+})
+// local storage defination == one type of publically available storage in which system on browser store the data .. 
+// LS only take string  data ..
+// its store data permanenet until its manually remove/delete or it can delete under 20 days automatic by self..
+/// data LS size to store in between 5 to 10 MB its depend on browser or system too..
+// its also fontanted parts...
+// its store value in key data and value ..
+
 
