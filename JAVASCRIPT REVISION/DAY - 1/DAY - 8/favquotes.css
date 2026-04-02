@@ -1,0 +1,87 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #1f1c2c, #928dab);
+    color: white;
+}
+
+/* Heading + top section */
+h2 {
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+a.btn {
+    border-radius: 25px;
+    transition: 0.3s;
+}
+a.btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+/* Favorite card (same glass effect) */
+.fav-card {
+    backdrop-filter: blur(12px);
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255,255,255,0.2);
+    border-radius: 20px;
+    transition: all 0.4s ease;
+    animation: fadeIn 0.6s ease;
+}
+
+/* Hover same as quote box */
+.fav-card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0 40px rgba(255,255,255,0.2);
+}
+
+/* Quote text */
+.fav-card p:first-child {
+    line-height: 1.6;
+    text-align: center;
+}
+
+/* Author */
+.fav-card p:nth-child(2) {
+    opacity: 0.8;
+    text-align: center;
+}
+
+/* Buttons */
+button {
+    border-radius: 30px !important;
+    padding: 8px 18px !important;
+    transition: all 0.3s ease !important;
+}
+
+/* Hover effect */
+button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+}
+
+/* Remove button special */
+button.btn-danger:hover {
+    background-color: #ff4d6d;
+}
+
+/* Empty state */
+.empty-msg {
+    text-align: center;
+    margin-top: 50px;
+    opacity: 0.7;
+}
+
+/* Animations (same as quote page) */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.95);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
