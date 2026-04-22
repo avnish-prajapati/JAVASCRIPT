@@ -1,10 +1,11 @@
 /* ===== GLOBAL ===== */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: linear-gradient(135deg, #0b1220 0%, #0f1b33 40%, #111827 100%);
+
+    background: linear-gradient(135deg, #09637E, #088395, #0b3f4a);
     min-height: 100vh;
     margin: 0;
-    color: #e5e7eb;
+    color: #EBF4F6;
 }
 
 /* glow background depth */
@@ -13,19 +14,19 @@ body::before {
     position: fixed;
     inset: 0;
     background:
-        radial-gradient(circle at top left, rgba(59,130,246,0.18), transparent 45%),
-        radial-gradient(circle at bottom right, rgba(16,185,129,0.12), transparent 50%);
+        radial-gradient(circle at top left, rgba(122,178,178,0.35), transparent 45%),
+        radial-gradient(circle at bottom right, rgba(8,131,149,0.25), transparent 50%);
     z-index: -1;
 }
 
 /* ===== CONTAINER ===== */
 .container {
-    background: rgba(17, 24, 39, 0.75);
+    background: rgba(9, 99, 126, 0.55);
     border-radius: 20px;
     padding: 20px;
     margin-top: 30px;
-    box-shadow: 0 20px 50px rgba(0,0,0,0.6);
-    border: 1px solid rgba(59,130,246,0.15);
+    box-shadow: 0 20px 50px rgba(0,0,0,0.35);
+    border: 1px solid rgba(122,178,178,0.35);
 }
 
 /* ===== NAV BUTTON ===== */
@@ -33,31 +34,31 @@ body::before {
     border-radius: 30px;
     padding: 8px 20px;
     font-weight: 600;
-    background: #3b82f6;
-    color: white;
+    background: #088395;
+    color: #EBF4F6;
     border: none;
 }
 
 .cart-btn:hover {
-    background: #10b981;
+    background: #b27a7a;
     transform: scale(1.05);
 }
 
 /* ===== PRODUCT CARD ===== */
 .card {
-    border: 1px solid rgba(59,130,246,0.15);
+    border: 1px solid rgba(122,178,178,0.3);
     border-radius: 16px;
     overflow: hidden;
-    background: rgba(12, 82, 246, 0.85);
-    box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+    background: rgba(8, 131, 149, 0.25);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.25);
     transition: all 0.3s ease;
     animation: fadeInUp 0.5s ease;
 }
 
 .card:hover {
     transform: translateY(-10px) scale(1.03);
-    box-shadow: 0 25px 60px rgba(0,0,0,0.6);
-    border-color: rgba(16,185,129,0.4);
+    box-shadow: 0 25px 60px rgba(0, 0, 0, 0.4);
+    border-color: rgba(122,178,178,0.6);
 }
 
 /* ===== IMAGE ===== */
@@ -66,8 +67,8 @@ body::before {
     width: 100%;
     object-fit: contain;
     padding: 15px;
-    background: linear-gradient(135deg, #0b1220, #111827);
-    border-bottom: 1px solid rgba(255,255,255,0.05);
+    background: linear-gradient(135deg, #09637E, #088395);
+    border-bottom: 1px solid rgba(235,244,246,0.2);
 }
 
 .card:hover img {
@@ -78,58 +79,57 @@ body::before {
 .card-title {
     font-size: 18px;
     font-weight: 600;
-    color: #f3f4f6;
+    color: #EBF4F6;
 }
 
 .card-text {
-    color: #9ca3af;
+    color: #BFD9D9;
     font-size: 14px;
 }
 
 /* ===== PRICE ===== */
 .card .fs-5 {
     font-weight: 900;
-    color: #fbbf24;
-    background: rgb(46, 231, 4);
+    color: #EBF4F6;
+    background: rgba(122,178,178,0.25);
     padding: 6px 12px;
     border-radius: 10px;
     display: inline-block;
-    border: 1px solid rgba(251,191,36,0.25);
+    border: 1px solid rgba(122,178,178,0.4);
 }
+
 /* ===== BUTTON ===== */
 .card button {
     border-radius: 30px;
     width: 100%;
     font-weight: 600;
-    background: #3b82f6;
+    background: #088395;
     border: none;
-    color: white;
-    position: relative;
-    overflow: hidden;
+    color: #EBF4F6;
 }
 
 .card button:hover {
-    background: #10b981;
+    background: #7AB2B2;
     transform: scale(1.05);
 }
 
 /* ===== CART HEADER ===== */
 .cart-header {
-    background: linear-gradient(135deg, #1d4ed8, #3b82f6);
-    color: white;
+    background: linear-gradient(135deg, #09637E, #088395);
+    color: #EBF4F6;
     border-radius: 15px;
     padding: 20px;
-    box-shadow: 0 15px 40px rgba(0,0,0,0.5);
+    box-shadow: 0 15px 40px rgba(0,0,0,0.3);
 }
 
 /* ===== TOTAL PRICE ===== */
 #total-price {
-    background: #0f55f9;
-    color: #10b981;
+    background: #EBF4F6;
+    color: #09637E;
     padding: 8px 15px;
     border-radius: 25px;
     font-weight: bold;
-    border: 1px solid rgba(16,185,129,0.3);
+    border: 1px solid rgba(122,178,178,0.5);
 }
 
 /* ===== CART CARDS ===== */
@@ -145,7 +145,7 @@ body::before {
     height: 100%;
     object-fit: contain;
     padding: 10px;
-    background: linear-gradient(135deg, #0b1220, #161e31);
+    background: linear-gradient(135deg, #09637E, #088395);
 }
 
 /* ===== REMOVE BUTTON ===== */
@@ -154,8 +154,8 @@ body::before {
 }
 
 .btn-outline-danger:hover {
-    background-color: #dc3545;
-    color: white;
+    background-color: #088395;
+    color: rgb(255, 255, 255);
     transform: scale(1.05);
 }
 
