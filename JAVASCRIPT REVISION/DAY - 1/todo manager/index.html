@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Task Manager</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="main">
+        <h1>Todo Manager</h1>
+        <form id="taskForm" class="glass">
+            <input type="hidden" id="taskId">
+
+            <input type="text" id="title" placeholder="Task Title" required>
+            <textarea id="description" placeholder="Task Description"></textarea>
+
+            <div class="row">
+                <input type="date" id="dueDate" required>
+                <select id="priority">
+                    <option value="Low">Low</option>
+                    <option value="Medium">Medium</option>
+                    <option value="High">High</option>
+                </select>
+            </div>
+
+            <button type="submit">Save Todo</button>
+        </form>
+
+        <div class="SetFilter">
+            <select id="filter">
+                <option value="All">All Priorities</option>
+                <option value="Low">Low</option>
+                <option value="Medium">Medium</option>
+                <option value="High">High</option>
+            </select>
+
+        </div>
+
+        <div id="todoList"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
