@@ -3,7 +3,7 @@ const SearchText = document.getElementById("input-box");
 const SearchButton = document.getElementById("search-book");
 const BookBox = document.getElementById("book-box");
 
-
+// that looks basic but not it is complicated if u never remeber concepts of single things which u will see in below the code ....
 
 
 function DisplayBooks() {
