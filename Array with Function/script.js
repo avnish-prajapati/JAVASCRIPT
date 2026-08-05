@@ -6,7 +6,7 @@
 //     sum += arr[i];
 //   }
 
-//   return sum; // return sum
+//   return sum; // return sum value
 // }
 // let arr = [1, 2, 3, 4];
 // let result = sumArray(arr);
