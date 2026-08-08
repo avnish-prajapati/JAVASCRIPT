@@ -1,6 +1,7 @@
 
 
 const cartDivison = document.getElementById("cart-div");
+
 const totalPrice = document.getElementById("total-price");
 
 
