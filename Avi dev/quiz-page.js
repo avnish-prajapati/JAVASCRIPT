@@ -1,6 +1,7 @@
 const quizData = [{
         question: "What is the capital of India?",
         options: ["Mumbai", "Delhi", "Chennai", "Kolkata"],
+
         answer: "Delhi"
     },
     {
