@@ -1,4 +1,4 @@
-// 1. Write a function that takes an array and returns the sum of all elements.
+ 1. Write a function that takes an array and returns the sum of all elements.
 // function sumArray(arr) {
 //   let sum = 0;
 
